@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "2cff95e8-9ec3-4432-87b5-9975469e60bd",
+		"name": "ApiMSSpringBootSecurityMavenH2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2MzY3NDk1N30.IH1qipaQfrMBsjpmp0dTKfeuix3XT-iwyBtKuEgu5i7fQdwcCBi3iokGohesRt_jOZELMJP5GPM2VOhLSu9FCg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiMSSpringBootSecurityMavenH2/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiMSSpringBootSecurityMavenH2",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2MzY3NDk1N30.IH1qipaQfrMBsjpmp0dTKfeuix3XT-iwyBtKuEgu5i7fQdwcCBi3iokGohesRt_jOZELMJP5GPM2VOhLSu9FCg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiMSSpringBootSecurityMavenH2/v1/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiMSSpringBootSecurityMavenH2",
+						"v1",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2MzY3NDk1N30.IH1qipaQfrMBsjpmp0dTKfeuix3XT-iwyBtKuEgu5i7fQdwcCBi3iokGohesRt_jOZELMJP5GPM2VOhLSu9FCg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Manuel Barbosa\",\n\t\"email\": \"maneco@teste.com\",\n\t\"active\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiMSSpringBootSecurityMavenH2/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiMSSpringBootSecurityMavenH2",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2MzY3NDk1N30.IH1qipaQfrMBsjpmp0dTKfeuix3XT-iwyBtKuEgu5i7fQdwcCBi3iokGohesRt_jOZELMJP5GPM2VOhLSu9FCg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":2,\"name\":\"Eloi Bilek\",\"email\":\"eloi@teste.com\",\"active\":true}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiMSSpringBootSecurityMavenH2/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiMSSpringBootSecurityMavenH2",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2MzY3NDk1N30.IH1qipaQfrMBsjpmp0dTKfeuix3XT-iwyBtKuEgu5i7fQdwcCBi3iokGohesRt_jOZELMJP5GPM2VOhLSu9FCg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiMSSpringBootSecurityMavenH2/v1/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiMSSpringBootSecurityMavenH2",
+						"v1",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"admin\",\"password\":\"password\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiMSSpringBootSecurityMavenH2/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiMSSpringBootSecurityMavenH2",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
