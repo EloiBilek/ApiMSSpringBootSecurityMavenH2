@@ -12,7 +12,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2MzY3NDk1N30.IH1qipaQfrMBsjpmp0dTKfeuix3XT-iwyBtKuEgu5i7fQdwcCBi3iokGohesRt_jOZELMJP5GPM2VOhLSu9FCg",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJKb2FvIFRlc3RlIiwiZXhwIjoxNTYyOTEyMDgyfQ.j1ZAX3gjxkUeHfdBQaGRqi7gzVrPF6dPl38CfgT7rpDiuMJUlYE19FXOgJauvL2fTJt_-l1_QDzl_T8INWPy1w",
 						"type": "text"
 					}
 				],
@@ -43,7 +43,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2MzY3NDk1N30.IH1qipaQfrMBsjpmp0dTKfeuix3XT-iwyBtKuEgu5i7fQdwcCBi3iokGohesRt_jOZELMJP5GPM2VOhLSu9FCg",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJKb2FvIFRlc3RlIiwiZXhwIjoxNTYyOTEyMDgyfQ.j1ZAX3gjxkUeHfdBQaGRqi7gzVrPF6dPl38CfgT7rpDiuMJUlYE19FXOgJauvL2fTJt_-l1_QDzl_T8INWPy1w",
 						"type": "text"
 					}
 				],
@@ -52,7 +52,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/ApiMSSpringBootSecurityMavenH2/v1/users/2",
+					"raw": "http://localhost:8080/ApiMSSpringBootSecurityMavenH2/v1/users/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -62,7 +62,7 @@
 						"ApiMSSpringBootSecurityMavenH2",
 						"v1",
 						"users",
-						"2"
+						"1"
 					]
 				}
 			},
@@ -79,14 +79,15 @@
 						"type": "text"
 					},
 					{
-						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2MzY3NDk1N30.IH1qipaQfrMBsjpmp0dTKfeuix3XT-iwyBtKuEgu5i7fQdwcCBi3iokGohesRt_jOZELMJP5GPM2VOhLSu9FCg",
-						"type": "text"
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"Manuel Barbosa\",\n\t\"email\": \"maneco@teste.com\",\n\t\"active\": true\n}"
+					"raw": "{\n\t\"name\": \"Joao Teste\",\n\t\"email\": \"joao@teste.com\",\n\t\"active\": false,\n\t\"password\": \"asdasd\",\n\t\"roles\": [{\n\t\t\"id\": 1,\n\t\t\"name\": \"ADMIN\"\n\t}]\n}"
 				},
 				"url": {
 					"raw": "http://localhost:8080/ApiMSSpringBootSecurityMavenH2/v1/users",
@@ -116,13 +117,13 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2MzY3NDk1N30.IH1qipaQfrMBsjpmp0dTKfeuix3XT-iwyBtKuEgu5i7fQdwcCBi3iokGohesRt_jOZELMJP5GPM2VOhLSu9FCg",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJKb2FvIFRlc3RlIiwiZXhwIjoxNTYyOTEyMDgyfQ.j1ZAX3gjxkUeHfdBQaGRqi7gzVrPF6dPl38CfgT7rpDiuMJUlYE19FXOgJauvL2fTJt_-l1_QDzl_T8INWPy1w",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"id\":2,\"name\":\"Eloi Bilek\",\"email\":\"eloi@teste.com\",\"active\":true}"
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"Joao Teste OK\",\n    \"email\": \"joao@teste.com\",\n    \"active\": true,\n    \"password\": \"$2a$10$wpI7g3jb2iyyAaR8un1TIegcLlvjVsBGJqbjyZ7WxOb7UZkcAYf6K\",\n    \"roles\": [\n        {\n            \"id\": 1,\n            \"name\": \"ADMIN\",\n            \"authority\": \"ADMIN\"\n        }\n    ]\n}"
 				},
 				"url": {
 					"raw": "http://localhost:8080/ApiMSSpringBootSecurityMavenH2/v1/users",
@@ -147,7 +148,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2MzY3NDk1N30.IH1qipaQfrMBsjpmp0dTKfeuix3XT-iwyBtKuEgu5i7fQdwcCBi3iokGohesRt_jOZELMJP5GPM2VOhLSu9FCg",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJFbG9pIFRlc3RlIE9rIiwiZXhwIjoxNTYyOTA4ODYwfQ.EBEcVuyI4IhSagArfHZpSzqMWezIiIreD3hYgSM_OnpUHC5c3r3BecZq2zSaXtExyyA5Lvrok34e00LjJ5y1rQ",
 						"type": "text"
 					}
 				],
@@ -185,7 +186,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"username\":\"admin\",\"password\":\"password\"}"
+					"raw": "{\"email\":\"joao@teste.com\",\"password\":\"asdasd\"}"
 				},
 				"url": {
 					"raw": "http://localhost:8080/ApiMSSpringBootSecurityMavenH2/login",
@@ -197,6 +198,43 @@
 					"path": [
 						"ApiMSSpringBootSecurityMavenH2",
 						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJKb2FvIFRlc3RlIiwiZXhwIjoxNTYyOTEyMDgyfQ.j1ZAX3gjxkUeHfdBQaGRqi7gzVrPF6dPl38CfgT7rpDiuMJUlYE19FXOgJauvL2fTJt_-l1_QDzl_T8INWPy1w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"joao@teste.com\",\"password\":\"1233\", \"newPassword\":\"123\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ApiMSSpringBootSecurityMavenH2/v1/users/newpassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiMSSpringBootSecurityMavenH2",
+						"v1",
+						"users",
+						"newpassword"
 					]
 				}
 			},

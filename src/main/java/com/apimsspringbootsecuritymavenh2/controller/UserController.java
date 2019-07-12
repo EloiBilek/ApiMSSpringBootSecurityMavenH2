@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.apimsspringbootsecuritymavenh2.config.security.AccountCredentials;
 import com.apimsspringbootsecuritymavenh2.model.entity.User;
 import com.apimsspringbootsecuritymavenh2.service.IUserService;
 
@@ -67,9 +68,17 @@ public class UserController {
 		userService.deleteById(id);
 	}
 
+	// Teste via browser...
 	@GetMapping(path = { "/status" })
 	public String status() {
 		return "ApiMSSpringBootSecurityMavenH2 on Tomcat and H2 - OK";
+	}
+
+	// Nova senha.
+	@PostMapping(path = { "/newpassword" })
+	@ResponseStatus(HttpStatus.OK)
+	public String updatePassword(@RequestBody final AccountCredentials resource, final HttpServletResponse response) {
+		return userService.updatePassword(resource);
 	}
 
 }

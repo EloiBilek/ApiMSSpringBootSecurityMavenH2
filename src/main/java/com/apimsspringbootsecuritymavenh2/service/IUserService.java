@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 import com.apimsspringbootsecuritymavenh2.common.IOperations;
+import com.apimsspringbootsecuritymavenh2.config.security.AccountCredentials;
 import com.apimsspringbootsecuritymavenh2.model.entity.User;
 
 /**
@@ -26,5 +27,7 @@ public interface IUserService extends IOperations<User> {
 	public User update(final User user);
 
 	public void deleteById(final long entityId);
+
+	public String updatePassword(AccountCredentials ccountCredentials);
 
 }
