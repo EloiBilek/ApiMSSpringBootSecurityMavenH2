@@ -30,7 +30,10 @@ Dados para acessar o console sql da base:
 /ApiMSSpringBootSecurityMavenH2/src/main/resources/scripts/ApiMSSpringBootSecurityMavenH2.postman_collection.json
 ### 4.1 Ordem de utilização do Postman:
  - Criar um usuário (Post), não tem validação (não precisa do token), tipo singUp das paginas de cadastro.
- - Logar na API (Login), no headers de retorno, copiar o Token que vem no atributo Authorization (ex: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJKb2FvIFRlc3RlIE9LIiwiZXhwIjoxNTYyOTEyMjAzfQ.4YIsOj04S9cf47qkOqypqmeB-Cj2QIdYpK5bVzj2KnfxvIWSMKCDS2e1s6bLd6Hc9c5v-BQdCl5uQt_9Cm1JLw), ele tem tempo de expiração (5min).
+ - Logar na API (Login), no headers de retorno, copiar o Token que vem no atributo Authorization (ex: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJKb2FvIFRlc3RlIE9LIiwiZXhwIjoxNTYyOTEyMjAzfQ.4YIsOj04S9cf47qkOqypqmeB-Cj2QIdYpK5bVzj2KnfxvIWSMKCDS2e1s6bLd6Hc9c5v-BQdCl5uQt_9Cm1JLw), ele tem tempo de expiração (5min), e setar no no headers de requisição, ex: request.getHeaders().add("Authorization", token);.
  - Usar os demais métodos conforme exemplos em json do Postman.
+ 
+## 5 Executando classe de teste unitário (JUnit):
+ - /ApiMSSpringBootSecurityMavenH2/src/test/java/com/apimsspringbootsecuritymavenh2/ApiMsSpringBootSecurityMavenH2ApplicationTests.java 
  
 #Fim
